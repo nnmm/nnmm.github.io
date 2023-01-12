@@ -123,7 +123,7 @@ create_struct!(Tha, u16, 9.48, String::from_utf16, |ptr: *mut u16| {
 
 For the `span()` function, I was able to confine the difference to just one function call through clever (or horrible?) use of `.into()`, so all that needs to be passed in is the function name.
 
-For the `pulsewidth()` function, I abstracted the parts of the methods that are different into a lambda which needs to be passed in. It works, but the macro invocation starts to get unreadable already.
+For the `pulsewidth()` function, I abstracted the parts of the methods that are different into a closure which needs to be passed in. It works, but the macro invocation starts to get unwieldy already.
 
 Note that **every difference becomes a macro argument**. When you have many small differences, the macro argument list gets longer and longer.
 
