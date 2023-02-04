@@ -4,7 +4,7 @@ title:  "Folding arguments into the macro"
 date:   2023-01-11 20:02:03 +0000
 author: me
 categories: rust
-tags:   rust
+tags:   rust macros
 ---
 
 In Rust, you might have written macros to define structs, functions etc. that are similar but not the same. This is a technique that can make these macros nicer in some cases. I'm sure it has been used before, but I haven't seen it described anywhere yet.
